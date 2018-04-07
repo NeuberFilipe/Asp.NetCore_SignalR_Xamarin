@@ -1,0 +1,36 @@
+﻿@model SignalRCore.Models.EntryModel
+@using SignalRCore.Models
+
+<form asp-action="Microchart" role="form">
+
+    <div class="modal-body form-horizontal">
+        <div class="form-group">
+            <label asp-for="Label" class="col-lg-3 col-sm-3 control-label"></label>
+            <div class="col-lg-6">
+                <input asp-for="Label" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="ValueLabel" class="col-lg-3 col-sm-3 control-label"></label>
+            <div class="col-lg-6">
+                <input asp-for="ValueLabel" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="TextColor" class="col-lg-3 col-sm-3 control-label"></label>
+            <div class="col-lg-6">
+                <input asp-for="TextColor" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Color" class="col-lg-3 col-sm-3 control-label"></label>
+            <div class="col-lg-6">
+                <input asp-for="Color" class="form-control" />
+            </div>
+        </div>
+    </div>
+    <form action="" method="post">
+        <input type="submit" value="Salvar" formaction="SaveMicrochart" />
+    </form>
+
+</form>
